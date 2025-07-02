@@ -28,7 +28,7 @@ body {
 .countdown {
   font-family: "Courier New", monospace;
   font-size: 40px;
-  color: red;
+  color: rgba(0, 21, 255, 0.816);
   margin-top: 20px;
 }
 /* slider */
