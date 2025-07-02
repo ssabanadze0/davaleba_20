@@ -35,20 +35,31 @@ body {
 #left-arrow,
 #right-arrow {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+  width: 10%;
+  height: 100%;
+  background: rgba(215, 19, 19, 0);
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
-  z-index: 10; /* 👈 arrows on top! */
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.3s ease;
 }
 
 #left-arrow {
-  left: 20px;
+  left: 0;
 }
+
 #right-arrow {
-  right: 20px;
+  right: 0;
+}
+
+#left-arrow:hover,
+#right-arrow:hover {
+  background: rgba(255, 255, 255, 0.3); /* more visible on hover */
 }
 
 .slider-wrapper {
